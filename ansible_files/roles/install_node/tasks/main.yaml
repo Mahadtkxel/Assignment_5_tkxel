@@ -1,0 +1,23 @@
+---
+- name: Add NodeSource repository for Debian-based systems
+  ansible.builtin.shell: |
+    curl -fsSL https://deb.nodesource.com/setup_{{ nodejs_version }} | bash -
+  when: ansible_os_family == "Debian"
+
+- name: Install Node.js 18
+  ansible.builtin.package:
+    name: nodejs
+    state: present
+
+- name: Verify Node.js installation
+  ansible.builtin.command: node --version
+  register: node_version
+  changed_when: false
+
+- name: Verify npm installation
+  ansible.builtin.command: npm --version
+  register: npm_version
+  changed_when: false
+
+- debug:
+    msg: "Node.js version installed: {{ node_version.stdout }}, NPM version: {{ npm_version.stdout }}"

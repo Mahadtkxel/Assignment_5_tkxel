@@ -1,0 +1,12 @@
+Due ***8, Dec - 2025***:
+
+- Install node js, using ansible roles on your local system (Please keep in mind you should understand the flow and syntax of the ansible file) 
+- Use a multi-stage containers approach below is the description 
+- Create a Dockerfile for the React application (you can get a sample code from any GitHub repo for the React application )
+- Create a react application docker image from the docker file
+- push the docker image to the docker hub
+- use multi-stage docker build (In your docker file you should need to use two images one is a node and the other is Nginx
+- The application should be accessible locally at the port 
+- Create EC2 using terraform (Please use the instance type minimal )
+- Install Apache or nginx on the Ec2 instance using Ansible and then change Apache port to 81 using Ansible role 
+- Question: Why do we need to use a multi-stage docker file?

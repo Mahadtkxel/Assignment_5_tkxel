@@ -1,0 +1,71 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Lock file
+terraform_files/.terraform.lock.hcl
+
+# Terraform variable files with sensitive data
+terraform_files/*.tfvars
+terraform_files/*.tfvars.json
+terraform_files/set_terraform_env.sh
+# Crash log filess
+crash.log
+
+# Override files (used for local configuration)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.tfplan
+
+# IDE and Editor directories/files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+
+# Ansible working directory
+ansible_files/*.retry
+
+# Sensitive files
+ansible_files/secrets.yml
+ansible_files/vault_pass.txt
+ansible_files/*_vault.yml
+
+# Python virtual environments
+ansible_files/venv/
+ansible_files/.venv/
+
+# Logs and debug files
+ansible_files/*.log
+ansible_files/debug.log
+
+# Backup files
+ansible_files/*~
+ansible_files/*.bak
+ansible_files/*.swp
+ansible_files/.DS_Store
+
+# IDE and editor files
+ansible_files/.vscode/
+ansible_files/.idea/
+ansible_files/*.iml
+
+# Roles downloaded via ansible-galaxy
+ansible_files/roles/*/meta/.galaxy_install_info
+
+# Untracked inventory or host files
+ansible_files/inventory_vars/
+ansible_files/inventory/
+ansible_files/hosts
+
+
+# miscellaneous 
+playground_creds.txt
+creds.txt
+assignment_4.txt
+example-react-app
