@@ -3,7 +3,8 @@
 
 # Lock file
 terraform_files/.terraform.lock.hcl
-
+terraform_files/*.tfstate
+terraform_files/tf_key
 # Terraform variable files with sensitive data
 terraform_files/*.tfvars
 terraform_files/*.tfvars.json
@@ -69,3 +70,4 @@ playground_creds.txt
 creds.txt
 assignment_4.txt
 example-react-app/node_modules
+
