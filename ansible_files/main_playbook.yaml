@@ -1,9 +1,7 @@
 ---
 - name: Configure server with NGINX, Docker and Docker Compose and change Nginx port
-  hosts: localhost
+  hosts: aws_instances
   become: true
-  vars:
-    - ansible_user: tk-lpt-888
   roles:
-    - install_node
-  
+    - nginx
+    - change_nginx_port

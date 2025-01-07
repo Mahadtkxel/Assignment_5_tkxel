@@ -1,0 +1,7 @@
+---
+- name: Update Nginx configuration to change port
+  replace:
+    path: /etc/nginx/nginx.conf
+    regexp: '^\s*listen\s+80;'
+    replace: '    listen {{ nginx_port }};'
+  notify: Restart NGINX
