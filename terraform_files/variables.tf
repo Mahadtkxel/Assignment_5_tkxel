@@ -1,35 +1,35 @@
-variable "azure_credentials" {
-  description = "Azure credentials in JSON format"
-  type        = string
-}
+# variable "key_pair_name" {
+#   description = "key_pair_name"
+#   type        = string
+# }
+
+# variable "instance_type" {
+#   description = "instance_type"
+#   type        = string
+# }
+
+# variable "instance_tag" {
+#   description = "Tag given to each deployed Instance"
+#   type = string 
+# }
 
 
+# variable "counter" {
+#   description = "Number of instances to launch"
+#   type        = number
+# }
 
-variable "environment_name" {
-  type = string
-}
+# variable "file_name" {
+#   description = "Name of the key pair"
+#   type        = string
+# }
 
-variable "rg_name" {
-  type = string
-  description = "resource group name"
-}
+# variable "cidr_block" {
+#   description = "CIDR Block"
+#   type = string
+# }
 
-variable "adm_user" {
-  type = string
-  description = "user name"
-  sensitive = true
-}
-
-
-
-variable "adm_pass" {
-    type = string
-    description = "mahad user login pass"
-    sensitive = true
-}
-
-variable "keydata" {
-  type = string
-  sensitive = true
-  description = "public key file location"
-}
+# variable "availability_zone"{
+#   description = "Availability Zones for the Subnet"
+#   type = string
+# }
