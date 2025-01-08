@@ -15,7 +15,7 @@ module "test_env_module" {
   source = "github.com/akilblanchard/terraform-aws-ssh-ec2-module.git"
 
   aws_region        = "us-east-1"
-  file_name         = "tf_key"
+  file_name         = "private_key"
   ec2_instance_name = "tkxel-assign5-ec2"
   key_pair_name     = "tfkey"
   cidr_block        = "10.0.0.0/16"
