@@ -3,7 +3,7 @@
 
 # Lock file
 terraform_files/.terraform.lock.hcl
-terraform_files/*.tfstate
+terraform_files/*.tfstate*
 terraform_files/tf_key
 # Terraform variable files with sensitive data
 terraform_files/*.tfvars
